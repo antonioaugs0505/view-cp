@@ -39,3 +39,9 @@ export async function POST(request,response){
 
     return NextResponse.json({"status":false});
 }
+
+export async function GET_ALL(){
+
+    const body = JSON.parse(file)
+    return NextResponse.json(body)
+}
