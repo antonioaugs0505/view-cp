@@ -45,3 +45,32 @@ export async function GET_ALL(){
     const body = JSON.parse(file)
     return NextResponse.json(body)
 }
+
+export async function GET_BY_ID(request, {params}){
+
+
+    try {
+        const fileId = params.id;
+        console.log('ID da rota:', fileId);
+
+
+        const body = JSON.parse(file);
+    
+        console.log('Data from data.json:', body);
+    
+        const user = body.usuarios.find(user => user.id == fileId);
+    
+        if (user) {
+          console.log('User found:', user);
+          return NextResponse.json(user);
+        } else {
+          console.log('User not found');
+          return NextResponse.json({ error: "Usuário não encontrado" }, { status: 404 });
+        }
+      } catch (error) {
+        console.error('Erro ao ler o arquivo data.json:', error);
+        return NextResponse.json({ error: "Erro interno do servidor" }, { status: 500 });
+      }
+
+
+}
