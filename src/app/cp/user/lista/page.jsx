@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 
-export async function UserListPage (){
+export default function UserListPage (){
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
@@ -35,7 +35,6 @@ export async function UserListPage (){
                         <th>Senha</th>
                         <th>Telefone</th>
                         <th>Cidade</th>
-                        {/* Adicione mais colunas conforme necessário */}
                     </tr>
                 </thead>
                 <tbody>
