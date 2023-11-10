@@ -45,7 +45,6 @@ export default function UserDetailsPage(){
             <p>ID: {userDetails.id}</p>
             <p>Nome: {userDetails.nome}</p>
             <p>Email: {userDetails.email}</p>
-            {/* Adicione outras propriedades do usuário conforme necessário */}
           </div>
         ) : (
           <p>Usuário não encontrado.</p>

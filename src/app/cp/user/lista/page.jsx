@@ -16,7 +16,7 @@ export default function UserListPage (){
                 }
 
                 const data = await response.json();
-                // Certifique-se de que a estrutura de resposta corresponde ao esperado
+      
                 setUsers(data.usuarios || []);
             } catch (error) {
                 console.error('Erro ao obter a lista de usuários:', error);
