@@ -77,13 +77,13 @@ export default function LoginUsers() {
         }
 
   return (
-    <div>
-        <h1>Identificação de Usuários</h1>
+    <div className=" py-8 h-auto bg-purple-600  flex flex-col items-center justify-center font-sans text-center">
+        <h1 className="mb-6 text-3xl text-white font-bold ">Identificação de Usuários</h1>
         <h2 className="bg-orange-500 text-4xl">{msg}</h2>
         <div className="forms-login-cad">
             <form onSubmit={handleSubmit}>
                 <fieldset>
-                    <legend>LOGIN</legend>
+                    <legend className="mb-6 text-2xl text-white font-bold ">LOGIN</legend>
                     <div>
                         <label htmlFor="idEmail">Email:</label>
                         <input type="email" name="email" id="idEmail" placeholder="Digite seu Email." value={usuario.email} onChange={handleChange} />
@@ -92,10 +92,10 @@ export default function LoginUsers() {
                         <label htmlFor="idSenha">Senha:</label>
                         <input type="password" name="senha" id="idSenha" placeholder="Digite sua Senha." value={usuario.senha} onChange={handleChange}/>
                     </div>
-                    <div>
+                    <div className="mt-16">
                         <button>Login</button>
                     </div>
-                    <div>
+                    <div className="m-6" >
                         <p>Se você ainda não tem cadastro conosco. CLIQUE AQUI.</p>
                     </div>
                 </fieldset>
