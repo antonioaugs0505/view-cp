@@ -7,6 +7,10 @@
     @apply inline p-2.8 hover:bg-amber-400 transition-all duration-500 ease-in-out;
   }
 
+  .link >p{
+    @apply rounded-sm border-purple-800 mx-2 my-5;
+  }
+
   .forms-login-cad{
     @apply w-full h-full text-white;
       & form{
